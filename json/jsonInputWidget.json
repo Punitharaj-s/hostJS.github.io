@@ -1,0 +1,41 @@
+{
+	"name": "jsonObject",
+	"description": "JSON Extracted widget",
+	"newInstancePrefix": "jsonObject",
+	"eula": "",
+	"vendor": "Punitharaj-s",
+	"license": "",
+	"id": "jsonObject",
+	"version": "1.0.1",
+	"icon": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "custom-button",
+			"url": "https://github.com/Punitharaj-s/hostJS.github.io/blob/main/webComponent.js",
+			"integrity": ""	,
+			"ignoreIntegrity": true
+			
+		}		
+	],
+	"properties": {
+		"width": {
+			"type": "integer",
+			"default": 192
+		},
+		"height": {
+			"type": "integer",
+			"default": 32
+		}
+	},
+	"methods": {
+		"clear": {
+			"description": "Clear the resultset"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the button."
+		}
+	}
+}
