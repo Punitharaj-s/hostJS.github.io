@@ -22,8 +22,7 @@
 
         fireChanged() {
             const config = require("./json/example_1.json");
-            console.log(config);     
-           
+            console.log(config); 
         }        
         
     }
