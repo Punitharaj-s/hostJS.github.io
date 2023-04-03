@@ -21,7 +21,8 @@
         }
 
         fireChanged() {
-            console.log("OnClick Triggered");     
+            const config = require("./json/example_1.json");
+            console.log(config);     
            
         }        
         
