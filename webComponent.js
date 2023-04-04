@@ -13,6 +13,7 @@
               
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            const config = require("./json/example_1.json");
             this.addEventListener("click", event => {
             var event = new Event("onClick");
             this.fireChanged();           
@@ -21,8 +22,8 @@
         }
 
         fireChanged() {
-            const config = require("./json/example_1.json");
-            console.log(config); 
+      
+            console.log(this.config); 
         }        
         
     }
