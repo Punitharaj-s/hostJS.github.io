@@ -22,8 +22,7 @@
         }
 
         fireChanged() {
-      
-            console.log("loaded"); 
+        fetch("https://teamtreehouse.com/profiles/matthew.json").then((response)=>response.json()).then((data)=>console.log(data)); 
         }        
         
     }
