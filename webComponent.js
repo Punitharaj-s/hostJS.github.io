@@ -23,7 +23,7 @@
 
         fireChanged() {
       
-            console.log(this.config); 
+            console.log("loaded"); 
         }        
         
     }
