@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<button type="button" id="myBtn">Console Button</button>` ;   
+    `<button type="button" id="myBtn">Helper Button</button>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
@@ -13,7 +13,6 @@
               
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            const config = require("./json/example_1.json");
             this.addEventListener("click", event => {
             var event = new Event("onClick");
             this.fireChanged();           
@@ -22,7 +21,7 @@
         }
 
         fireChanged() {
-        fetch("https://teamtreehouse.com/profiles/matthew.json").then((response)=>response.json()).then((data)=>console.log(data)); 
+            fetch("https://teamtreehouse.com/profiles/matthew.json").then((response)=>response.json()).then((data)=>console.log(data));    
         }        
         
     }
