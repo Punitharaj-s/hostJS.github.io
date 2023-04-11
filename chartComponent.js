@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `</script><div id="donutchart" style="width: 900px; height: 500px;"></div>` ;   
+    `</script><div id="donutchart" style="width: 900px; height: 500px; background-color: #c00000"></div>` ;   
     // adding google script//
 //     let scriptEle = document.createElement("script");
 //     scriptEle.setAttribute("src", "https://www.gstatic.com/charts/loader.js");
