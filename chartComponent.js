@@ -1,8 +1,12 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><div id="donutchart" style="width: 900px; height: 500px;"></div>` ;   
-   
+    `</script><div id="donutchart" style="width: 900px; height: 500px;"></div>` ;   
+    // adding google script//
+    let scriptEle = document.createElement("script");
+    scriptEle.setAttribute("src", "https://www.gstatic.com/charts/loader.js");
+    document.body.appendChild(scriptEle);
+    
     class PerformanceHelp extends HTMLElement {
         constructor() {
             super();
