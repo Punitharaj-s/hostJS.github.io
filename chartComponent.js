@@ -23,6 +23,9 @@
                 var jsonArray = fetch("https://teamtreehouse.com/profiles/matthew.json").then((response)=>response.json());
                 var array = JSON.parse(jsonArray);
                 console.log(array['id']);
+                scriptEle.addEventListener("error", (ev) => {
+            console.log("Error on loading file", ev);
+            });
                 //var data = google.visualization.arrayToDataTable(array);
 
 //         var options = {
